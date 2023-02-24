@@ -16,4 +16,5 @@ for file in $(pwd)/*
     if ! [[ "$name" == "${filename%.*}" ]] && [[ -f $file ]] && ! [[ "$suf" == "sh" ]]; then
         mv "$filename" "$name"."$suf"
     fi
+    
 done
