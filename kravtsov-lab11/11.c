@@ -5,8 +5,7 @@ int main() {
     int ans = 0;
     int fl = 0;
     
-    while (1)
-    {
+    while (1) {
         c = getchar();
         if ((c == ' ' || c == '\n') && fl == 1) {
             ans++;
@@ -18,8 +17,7 @@ int main() {
             }
         }
 
-        if (c == EOF)
-        {
+        if (c == EOF) {
             printf("%d\n", ans);
             break;
         }

@@ -39,7 +39,7 @@ int main() {
 
     int l = size;
     int p = 0;
-    int i = -1, j = 0;
+    int i = 0, j = size-1;
     int dir[4] = {0, 1, 0, -1};
     while (l != 0) {
         for (int k = 0; k != l; ++k) {

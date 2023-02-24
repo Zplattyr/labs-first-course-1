@@ -1,26 +1,18 @@
 #include <stdio.h>
+void pri_arr (int ncol, int nlines, int a[]) {
+  int i, j;
 
-unsigned long Lab12(unsigned long n) {
-    if (n == 0) {
-        return 101;
-    };
-    unsigned long a = (n * 10 + 1);
-    unsigned long x = 10;
-    for( ; x <= a ; ) {
-        x = x * 10;
-    };
-
-    return x + a;
+  for(i = 0; i < nlines; i++)
+    for (j = 0; j < ncol || (puts(""), 0); j++)
+      printf("%d ", a[i * ncol + j]);
 }
 
-int main(void) {
-    
-    scanf("%c",&g);
-    printf("%c", g);
-    scanf("%c",&g);
-    printf("%c", g);
-    unsigned long n;   
 
-
-    return 0;
+int main()
+{
+  puts("2 dim");
+  int a[3][4] = {{1, 2, 3, 4},
+         {11, 12, 13, 14},
+         {21, 22, 23, 24}};
+  pri_arr(4, 3, &a[0][0]);
 }
